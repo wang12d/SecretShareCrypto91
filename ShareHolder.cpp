@@ -56,6 +56,6 @@ ShareHolder::Recover(vector<ShareHolder*>& shareHolders)
         return res;
     }
     else {
-        exit(-3);
+        throw "Cannot recover secret as an integer.";
     }
 }
